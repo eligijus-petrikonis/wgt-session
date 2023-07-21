@@ -1,0 +1,260 @@
+#images,
+#text,
+#columns,
+#forms,
+#tables {
+  /* display: none; */
+}
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+/* Header, logo, navigation */
+/* header {
+  background-color: #494949;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+header #logo img {
+  max-width: 100%;
+  height: 3rem;
+  display: block;
+}
+header nav a#hamburger {
+  color: #fff;
+  height: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header nav a#hamburger svg {
+  width: 2rem;
+  height: 2rem;
+}
+header nav ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul a {
+  color: #fff;
+}
+header nav ul a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+header nav a#hamburger svg.close {
+  display: none;
+}
+header nav #hamburger.opened + ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: auto;
+  max-height: calc(100vh - 3rem);
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  width: 100vw;
+  background-color: #494949;
+}
+header nav #hamburger.opened + ul li a {
+  padding: 1rem 1rem;
+  border-top: 1px dashed #fff;
+  display: flex;
+  align-items: center;
+}
+header nav #hamburger + ul li a svg {
+  margin-right: 0.5rem;
+}
+header nav #hamburger.opened svg.open {
+  display: none;
+}
+header nav #hamburger.opened svg.close {
+  display: inline;
+}
+
+@media (min-width: 600px) {
+  header nav a#hamburger {
+    display: none;
+  }
+  header nav ul,
+  header nav #hamburger.opened + ul {
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
+    overflow: hidden;
+    max-height: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    background-color: unset;
+  }
+  header nav ul li a,
+  header nav #hamburger.opened + ul li a {
+    display: flex;
+    border-left: 1px dashed #fff;
+    border-top: 0;
+    padding: 0.75rem;
+    font-size: 0;
+  }
+  header nav #hamburger + ul li a svg {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  header nav ul li a,
+  header nav #hamburger.opened + ul li a {
+    font-size: 1rem;
+  }
+  header nav #hamburger + ul li a svg {
+    margin-right: 0.5rem;
+  }
+} */
+
+/* main root element */
+/* main {
+  margin-top: 5rem;
+} */
+
+/* images section */
+/* #images img {
+  max-width: 100%;
+} */
+/* change to this and change previous #logo rule with img */
+/* img,
+picture,
+video {
+  max-width: 100%;
+} */
+
+/* #text section */
+/* #text p {
+  word-wrap: break-word;
+} */
+
+/* #columns section */
+/* #columns section {
+  display: flex;
+  flex-direction: column;
+}
+@media (orientation: landscape) or (min-width: 576px) {
+  #columns section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #columns section aside {
+    width: calc(50% - 2rem);
+  }
+}
+@media (orientation: landscape) and (min-width: 768px) {
+  #columns section aside {
+    width: calc(25% - 2rem);
+  }
+}
+@media (min-width: 992px) {
+  #columns section aside:nth-child(1),
+  #columns section aside:nth-child(2) {
+    order: 1;
+  }
+  #columns section aside:nth-child(3),
+  #columns section aside:nth-child(4) {
+    order: 0;
+  }
+} */
+
+/* #forms section */
+/* input[type="text"],
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #121212;
+  padding: 0.5rem;
+}
+textarea {
+  min-height: 10rem;
+}
+#forms form .form-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+#forms form .form-row > label {
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+}
+#forms form .form-row > div {
+  width: 100%;
+}
+#forms form .form-row button {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  #forms form .form-row {
+    flex-direction: row;
+  }
+  #forms form .form-row > label {
+    width: 25%;
+    padding-bottom: 0;
+    padding-right: 0.3rem;
+  }
+  #forms form .form-row button {
+    margin: 0 0.5rem;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  #forms form .form-row > label {
+    width: 15%;
+    text-align: right;
+  }
+  #forms form .form-row:last-child {
+    justify-content: space-between;
+  }
+  #forms form .form-row button {
+    margin: 0 0.5rem;
+    width: 25%;
+  }
+} */
+
+/* #tables section */
+/* .hide {
+  display: none;
+}
+@media (min-width: 576px) {
+  .show-sm-table-cell {
+    display: table-cell;
+  }
+}
+@media (min-width: 768px) {
+  .show-md-table-cell {
+    display: table-cell;
+  }
+}
+@media (min-width: 992px) {
+  .show-lg-table-cell {
+    display: table-cell;
+  }
+}
+@media (min-width: 1200px) {
+  .show-xl-table-cell {
+    display: table-cell;
+  }
+}
+@media (min-width: 1400px) {
+  .show-xxl-table-cell {
+    display: table-cell;
+  }
+} */
