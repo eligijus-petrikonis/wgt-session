@@ -1,18 +1,18 @@
-#images,
-#text,
-#columns,
-#forms,
-#tables {
-  /* display: none; */
-}
-/* *,
+/* #images, */
+/* #text, */
+/* #columns, */
+/* #forms, */
+/* #tables {
+  display: none;
+} */
+*,
 *::before,
 *::after {
   box-sizing: border-box;
-} */
+}
 
 /* Header, logo, navigation */
-/* header {
+header {
   background-color: #494949;
   display: flex;
   flex-direction: row;
@@ -39,6 +39,9 @@ header nav a#hamburger svg {
   width: 2rem;
   height: 2rem;
 }
+header nav a#hamburger svg.close {
+  display: none;
+}
 header nav ul {
   display: none;
   list-style: none;
@@ -51,9 +54,6 @@ header nav ul a {
 header nav ul a svg {
   width: 1.5rem;
   height: 1.5rem;
-}
-header nav a#hamburger svg.close {
-  display: none;
 }
 header nav #hamburger.opened + ul {
   display: flex;
@@ -121,31 +121,27 @@ header nav #hamburger.opened svg.close {
   header nav #hamburger + ul li a svg {
     margin-right: 0.5rem;
   }
-} */
+}
 
 /* main root element */
-/* main {
+main {
   margin-top: 5rem;
-} */
+}
 
 /* images section */
-/* #images img {
-  max-width: 100%;
-} */
-/* change to this and change previous #logo rule with img */
-/* img,
+img,
 picture,
 video {
   max-width: 100%;
-} */
+}
 
 /* #text section */
-/* #text p {
+#text p {
   word-wrap: break-word;
-} */
+}
 
 /* #columns section */
-/* #columns section {
+#columns section {
   display: flex;
   flex-direction: column;
 }
@@ -172,10 +168,10 @@ video {
   #columns section aside:nth-child(4) {
     order: 0;
   }
-} */
+}
 
 /* #forms section */
-/* input[type="text"],
+input[type="text"],
 textarea,
 select {
   width: 100%;
@@ -227,10 +223,10 @@ textarea {
     margin: 0 0.5rem;
     width: 25%;
   }
-} */
+}
 
 /* #tables section */
-/* .hide {
+.hide {
   display: none;
 }
 @media (min-width: 576px) {
@@ -257,4 +253,4 @@ textarea {
   .show-xxl-table-cell {
     display: table-cell;
   }
-} */
+}
